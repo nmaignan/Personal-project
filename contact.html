@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<!--Contact page
+*************************************
+Date: 6/7/2012
+Author: Shah Jalal
+*************************************
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lawrencerville Family Dentistry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!-- =================== Styles ======================== -->
+    <!-- bootstrap style sheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- datepicker plugins stylesheet -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" /> 
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    
+    <style type="text/css">
+		.map-container {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height:100%;
+			border:5px solid #fff;
+		}
+		.map-container iframe {
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 440px;
+		}	
+    </style>
+   </head>
+
+  <body>
+   <!-- =================== Statr Navbar ======================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            
+          </a>
+          <a class="brand" href="index.html"><span class="color-highlight">L</span>awrenceville Family Dentistry</a>
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Make Appointment</a></li>
+              <li><a href="gallery.html">Before & After</a></li>
+			  <li class="active"><a href="contact.html">Contact</a></li>
+			  
+            </ul>
+          </div><!--close .nav-collapse -->
+        </div>
+      </div>
+    </div>
+<!-- ==================== Start Contact form ======================= -->
+	
+	<div class="container">
+	<hr>
+      <div class="row">
+        <div class="span6">
+		    <h1>Contact us</h1>
+			<form name="contact" class="well" action="">
+			  <fieldset>
+			  	<input type="text" class="span2" id="datepicker" placeholder="Date"><label class="error" for="Date" id="date_error">This field is required</label><br>
+				<input type="text" id="Fname" class="span4" placeholder="First Name">
+				<label class="error" for="Firstname" id="first_name_error">This field is required</label><br>
+				<input type="text" id="Lname" class="span4"  placeholder="Last Name">
+				<label class="error" for="Lasttname" id="last_name_error">This field is required</label><br>
+				<input type="text" id="email" class="span4" placeholder="Email">
+				<label class="error" for="email" id="email_error">This field is required</label><br>
+				<input type="text" id="phone" class="span4" placeholder="Phone">
+				<label class="error" for="phone" id="phone_error">This field is required</label><br>
+				<textarea class="span4" placeholder="Message"></textarea>
+				<button type="submit" class="btn button" id="submit_btn">Send</button>
+			  </fieldset>	
+			</form>  <!--close contact form-->
+        </div>
+<!-- ================== Start Google Map ========================== -->        
+		
+		<div class="span6">
+			<h1>Direction</h1>
+			<div class="map-container">
+				<iframe src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lawrenceville+Family+Dentistry,+Club+Dr,+Lawrenceville,+GA+30044&amp;aq=2&amp;oq=La3664+Club+Dr,+Lawrenceville,+GA+30044&amp;sll=33.950266,-84.124546&amp;sspn=0.04037,0.084543&amp;t=h&amp;ie=UTF8&amp;hq=Lawrenceville+Family+Dentistry,+Club+Dr,+Lawrenceville,+GA+30044&amp;hnear=&amp;ll=33.941024,-84.125417&amp;spn=0.080732,0.169086&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe>
+			</div>    
+		</div>   <!-- end google map -->
+	  </div>		
+	  
+<!-- ================== Start row ========================== -->        
+	  
+	  <div class="row">
+		<div class="span4">
+			<p><h3>Column One</h3></span></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat sem vel nibh bibendum auctor. 
+			Nullam non magna in quam egestas blandit a a justo. Integer vel rhoncus tellus. 
+			Vivamus et iaculis tortor. Quisque fermentum arcu dolor. Duis mollis libero et 
+			ipsum euismod sed gravida sem pretium. Aliquam eu eros at velit laoreet rhoncus. 
+			Nulla a urna eu diam cursus tempor.</p>
+		</div>
+		<div class="span4">
+			<p><h3>Column Two</h3></span></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat sem vel nibh bibendum auctor. 
+			Nullam non magna in quam egestas blandit a a justo. Integer vel rhoncus tellus. 
+			Vivamus et iaculis tortor. Quisque fermentum arcu dolor. Duis mollis libero et 
+			ipsum euismod sed gravida sem pretium. Aliquam eu eros at velit laoreet rhoncus. 
+			Nulla a urna eu diam cursus tempor.</p>
+		</div>
+		<div class="span4">
+			<p><h3>Column Three</h3></span></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat sem vel nibh bibendum auctor. 
+			Nullam non magna in quam egestas blandit a a justo. Integer vel rhoncus tellus. 
+			Vivamus et iaculis tortor. Quisque fermentum arcu dolor. Duis mollis libero et 
+			ipsum euismod sed gravida sem pretium. Aliquam eu eros at velit laoreet rhoncus. 
+			Nulla a urna eu diam cursus tempor.</p>
+		</div>
+	  </div>
+	  <hr>
+
+<!-- ================== Start footer ========================== -->
+		<footer class="row">
+			<div>
+				<div class="span6">
+					<div class="is-padded">
+						<nav>
+							<h2>Navigation</h2>
+							<hr>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="#">Make Appointment</a></li>
+								<li><a href="gallery.html">Before & After</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="span6">
+					<div class="is-padded">
+						<h2>Twitter</h2>
+						<hr>
+						<a href="#">@FamilyDentistry</a>
+						<p>This is what our tweet looks like on this website. Tweet tweet. Twitter Twatter.</p>
+						<em>3 days ago</em><br>
+						<br>
+						<a href="#">@FamilyDentistry</a>
+						<p>This is what our tweet looks like on this website. Tweet tweet. Twitter Twatter.</p>
+						<em>3 days ago</em>
+					</div>
+				</div>
+		
+			</div>
+			<p>
+			&copy;2013 Lawrenceville Family Dentistry.<br>
+			Design by <a href="http:/www.nashvillesoftwareschool.com">Shah Jalal</a>
+			</p>
+		</footer><!-- close footer -->
+
+    </div><!-- close container -->
+
+<!-- ================== Javascript link ========================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>   
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<!-- datepicker plugins -->
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="js/jquery.smooth-scroll.min.js"></script>
+	<script src="js/lightbox.js"></script>
+ 
+  </body>
+</html>

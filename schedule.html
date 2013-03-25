@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<!--Contact page
+*************************************
+Date: 6/7/2012
+Author: Shah Jalal
+*************************************
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lawrencerville Family Dentistry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!-- =================== Styles ======================== -->
+    <!-- bootstrap style sheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- datepicker plugins stylesheet -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" /> 
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    
+    <style type="text/css">
+		.map-container {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height:100%;
+			border:5px solid #fff;
+		}
+		.map-container iframe {
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 440px;
+		}	
+    </style>
+   </head>
+
+  <body>
+   <!-- =================== Statr Navbar ======================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            
+          </a>
+          <a class="brand" href="index.html"><span class="color-highlight">L</span>awrenceville Family Dentistry</a>
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="active" ><a href="schedule.html">Make Appointment</a></li>
+              <li><a href="gallery.html">Before & After</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			  
+            </ul>
+          </div><!--close .nav-collapse -->
+        </div>
+      </div>
+    </div>
+<!-- ==================== Start Contact form ======================= -->
+	
+	<div class="container">
+	 <hr>
+      <div class="row 1">
+        <div class="span4">
+        	<img src="img/couple-smiling.png">
+			<br />
+			<p><a href="download_forms.html"><img src="img/new-patient-forms.png" alt="Thumbnail"></a></p>
+			<p><a href="contact.html"><img src="img/directions.png" alt="Thumbnail"></a></p> <br />
+			<h3>Contact Us</h3>
+			<p>3664 Club Drive <br />Lawrenceville, GA 30044</p>
+			<strong>Phone:</strong> (770) 279-7987 <br /><strong>Fax:</strong> (770) 279-7988
+			<h3>Office Hours</h3>
+			Monday-Friday<br />8:00am-5:00pm
+        </div>
+        <div id="application" class="span8">
+		    <h1>Appointment Request</h1><br />
+		    <p>Schedule your appointments online. It's easy; just fill out our appointment request form and press submit. Our practice will contact you soon to confirm the date and time of your appointment.</p><br />
+		    <h3>Your Information</h3>
+
+			<form name="registration_form" id="registration" class="well" action="">
+			  <fieldset>
+			  	<input type="text" class="span2 patient_inputs" id="datepicker" placeholder="Date"><label class="error" for="Date" id="date_error">This field is required</label><br>
+				<input type="text" id="Fname" class="span4 patient_inputs" placeholder="First Name">
+				<label class="error" for="Firstname" id="first_name_error">This field is required</label><br>
+				
+				<input type="text" id="Lname" class="span4 patient_inputs"  placeholder="Last Name">
+				<label class="error" for="Lasttname" id="last_name_error">This field is required</label><br>
+
+				<input type="text" id="address" class="span4 patient_inputs" placeholder="Street Address">
+				<label class="error" for="Address" id="street_address_error">This field is required</label><br>
+				
+				<input type="text" id="city" class="span2 patient_inputs"  placeholder="City">
+				<label class="error" for="City" id="city_name_error">This field is required</label><br>
+				
+				<input type="text" id="zip" class="span2 patient_inputs"  placeholder="Zip Code">
+				<label class="error" for="Zip" id="zip_code_error">This field is required</label><br>
+
+				<input type="text" id="email" class="span4 patient_inputs" placeholder="Email">
+				<label class="error" for="email" id="email_error">This field is required</label><br>
+				
+				<input type="text" id="phone" class="span4 patient_inputs" placeholder="Phone">
+				<label class="error" for="phone" id="phone_error">This field is required</label><br>
+				
+				<textarea class="span4 patient_inputs" placeholder="Additional Informaiton"></textarea><br />
+				<button type="button" class="btn" id="reset" onclick="clearForm()">Reset</button>
+				<button type="button" class="btn" id="submit">Submit</button>
+			  </fieldset>	
+			</form>  <!--close contact form-->
+			
+        </div>
+        <p id="message"></p>
+	  </div><!-- end first row --> 		  
+	<hr>
+
+<!-- ================== Start footer ========================== -->
+		<footer class="row">
+			<div>
+				<div class="span6">
+					<div class="is-padded">
+						<nav>
+							<h2>Navigation</h2>
+							<hr>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="schedule.html">Make Appointment</a></li>
+								<li><a href="gallery.html">Before & After</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="span6">
+					<div class="is-padded">
+						<h2>Twitter</h2>
+						<hr>
+						<a href="#">@FamilyDentistry</a>
+						<p>This is what our tweet looks like on this website. Tweet tweet. Twitter Twatter.</p>
+						<em>3 days ago</em><br>
+						<br>
+						<a href="#">@FamilyDentistry</a>
+						<p>This is what our tweet looks like on this website. Tweet tweet. Twitter Twatter.</p>
+						<em>3 days ago</em>
+					</div>
+				</div>
+		
+			</div>
+			<p>
+			&copy;2013 Lawrenceville Family Dentistry.<br>
+			Design by <a href="http:/www.nashvillesoftwareschool.com">Shah Jalal</a>
+			</p>
+		</footer><!-- close footer -->
+</div><!-- close container -->
+<!-- ================== Javascript link ========================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/backlift-reloader.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>   
+	<!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+	<!-- datepicker plugins -->
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<!--<script src="js/bootstrap.js"></script> -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="js/lightbox.js"></script>
+ 
+  </body>
+</html>

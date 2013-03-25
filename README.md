@@ -13,8 +13,10 @@ Completed:
 4. Online appointment request 
 5. Driving direction with Iframe 
 
-Work in progress:
-1. Driving direction with google api
+On the development branch all the files are uptodate. I will make some minor changes and merge it with the master.
+Things updated on development branch:
+1. Contact page updated with the google driving direction. 
+2. A seperate javascript file (contact.js) created for contact page for the google map and direction 
 
 Future add-ons:
 1. Secured login for both doctor and patient 

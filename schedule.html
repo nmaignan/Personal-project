@@ -10,10 +10,6 @@ Author: Shah Jalal
   <head>
     <meta charset="utf-8">
     <title>Lawrencerville Family Dentistry</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
   <!-- =================== Styles ======================== -->
     <!-- bootstrap style sheets -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -21,23 +17,6 @@ Author: Shah Jalal
     <!-- datepicker plugins stylesheet -->
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" /> 
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-    
-    <style type="text/css">
-		.map-container {
-			position: relative;
-			overflow: hidden;
-			width: 100%;
-			height:100%;
-			border:5px solid #fff;
-		}
-		.map-container iframe {
-			position: relative;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 440px;
-		}	
-    </style>
    </head>
 
   <body>
@@ -56,7 +35,6 @@ Author: Shah Jalal
               <li class="active" ><a href="schedule.html">Make Appointment</a></li>
               <li><a href="gallery.html">Before & After</a></li>
 			  <li><a href="contact.html">Contact</a></li>
-			  
             </ul>
           </div><!--close .nav-collapse -->
         </div>
@@ -78,12 +56,12 @@ Author: Shah Jalal
 			<h3>Office Hours</h3>
 			Monday-Friday<br />8:00am-5:00pm
         </div>
-        <div class="span8">
+        <div id="application" class="span8">
 		    <h1>Appointment Request</h1><br />
 		    <p>Schedule your appointments online. It's easy; just fill out our appointment request form and press submit. Our practice will contact you soon to confirm the date and time of your appointment.</p><br />
 		    <h3>Your Information</h3>
 
-			<form name="registration_form" id="registration" class="well" action="">
+			<form name="registration_form" class="well" action="">
 			  <fieldset>
 			  	<input type="text" class="span2 patient_inputs" id="datepicker" placeholder="Date"><label class="error" for="Date" id="date_error">This field is required</label><br>
 				<input type="text" id="Fname" class="span4 patient_inputs" placeholder="First Name">
@@ -112,8 +90,8 @@ Author: Shah Jalal
 				<button type="button" class="btn" id="submit">Submit</button>
 			  </fieldset>	
 			</form>  <!--close contact form-->
-			<p id="message"></p>
         </div>
+        <p id="message"></p>
 	  </div><!-- end first row --> 		  
 	<hr>
 
@@ -158,17 +136,13 @@ Author: Shah Jalal
 </div><!-- close container -->
 <!-- ================== Javascript link ========================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/backlift-reloader.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>   
-	<!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+    <script src="js/backlift-reloader.js"></script>   
 	<!-- datepicker plugins -->
 	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-	<!--<script src="js/bootstrap.js"></script> -->
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
-	<script src="js/lightbox.js"></script>
+	
  
   </body>
 </html>

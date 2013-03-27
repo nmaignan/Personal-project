@@ -1,9 +1,18 @@
-$(document).ready(function(){
+// ================== Document ready Function ========================== //
+    $(document).ready(function(){
+        getLocation();
+        $('#getdirections').click(
+          function(){
+          calcRoute();
+        }
+      ); // end click
+    }) // end document ready    
+      
+// ================== getLocation Function ========================== //
       var directionsDisplay;
       var directionsService;
-
     function getLocation () {
-      directionsDisplay = new google.maps.DirectionsRenderer();
+          directionsDisplay = new google.maps.DirectionsRenderer();
       // var office = new google.maps.LatLng(33.941024, -84.125417);
       var mapOptions = {
           zoom     : 10,
@@ -37,18 +46,12 @@ $(document).ready(function(){
       var request = {
           origin     : start,
           destination: end,
-         travelMode  : google.maps.TravelMode.DRIVING
+          travelMode  : google.maps.TravelMode.DRIVING
       };
-         directionsService.route(request, function(response, status) {
+          directionsService.route(request, function(response, status) {
         if (status == google.maps.DirectionsStatus.OK) {
-         directionsDisplay.setDirections(response);
+          directionsDisplay.setDirections(response);
         }
       });    
 }; //end calcRoute 
-    getLocation();
-    $('#getdirections').click(
-      function(){
-        calcRoute();
-      }
-  ); // end click 
-}) // end ready
+     

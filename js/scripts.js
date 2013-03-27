@@ -78,11 +78,7 @@
     }); //close click 
 }); //close document ready
 
-// ================== getLocation Function ========================== //     
-      
-
-// ================== spotImage Function ========================== //     
-    
+// ================== spotImage Function ========================== //         
     function spotImage() { 
       var spotlight = {  
          // the opacity of the "transparent" images  
@@ -114,7 +110,6 @@
   };
 
 // ================== Post Function (clloect all the field informaiton and post it to the database) ========================== //
-
     function addInformation() {
       var dataString =  {
           appDate   : $("#datepicker").val(),
@@ -128,16 +123,15 @@
         };  
 
     $.ajax({  
-        url     : 'backliftapp/request', 
+        url     : 'backliftapp/requestDatabase', 
         type    : 'POST',   
         dataType: 'json',
         data    : dataString,
         success: function(data) {  
         console.log(data);
-        clearForm();
-        // alert("Your request has been submitted. We will be in touch soon."); 
-        // $("#rigistration").hide();
-        // $('#message').html('<h3>Your request has been submitted.</h3><br/><h4>We will be in touch soon.</h4>');   
+        clearForm(); 
+        $("#application").hide();
+        $('#message').html('<h3>Thank you!!! </h3><br />Your request has been submitted. We will be in touch soon.</h4>');   
       } //close sucess 
     }); //close ajax  
   }; //close addInformation

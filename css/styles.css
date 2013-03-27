@@ -1,4 +1,12 @@
-
+#map {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    border:5px solid #fff;
+}
+#map img {
+    max-width: none;
+}   
 
 .spotlightWrapper ul {  
     list-style-type: none; /* remove the default style for list items */  
@@ -24,3 +32,4 @@
 }
 
 .clear { clear:both; } /* to clear the float after the last item */  
+
